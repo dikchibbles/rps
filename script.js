@@ -113,5 +113,6 @@ for (let i = 0; i < weaponBtns.length; i++) {
     changeScore(resultScore);
     changeScoreText(resultText);
     checkEndGame();
+    window.scrollTo(0, 0);
   });
 }
