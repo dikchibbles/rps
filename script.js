@@ -78,11 +78,28 @@ let playRound = (playerChoice, computerChoice) => {
   }
 };
 
+let endGame = () => {
+  let header = document.getElementsByClassName("pricing-header")[0];
+  if (playerScore >= 3) {
+    changeScoreText("You won the whole game! Congratulations!");
+  } else if (computerScore >= 3) {
+    changeScoreText("You lost the game! Loser");
+  }
+  let playAgainBtn = document.createElement("button");
+  playAgainBtn.classList.add("btn", "btn-primary");
+  playAgainBtn.textContent = "Play again?";
+  playAgainBtn.addEventListener("click", () => {
+    window.location.reload();
+  });
+  header.appendChild(playAgainBtn);
+};
+
 let checkEndGame = () => {
   if (playerScore >= 3 || computerScore >= 3) {
     for (let i = 0; i < weaponBtns.length; i++) {
       weaponBtns[i].style.display = "none";
     }
+    endGame();
   }
 };
 
