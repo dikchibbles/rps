@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .icon-square {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pricing-header p-3 pb-md-4 text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis">
+          Rock Paper Scissors
+        </h1>
+        <p class="fs-5 text-body-secondary score-text"></p>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-3 mb-3 mt-2 text-center justify-content-center"
+      >
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Player</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title player-score">0</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Computer</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title computer-score">0</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Choose your weapon</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <img src="rock.png" width="40" alt="rock" />
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Rock</h3>
+            <p>
+              The OG of tough decisions. Smashes scissors but gets wrapped up by
+              paper. It's like a boulder-sized bully in a playground full of
+              office supplies. It's what happens when Mother Nature goes heavy
+              metal.
+            </p>
+            <a class="btn btn-primary weapon-btn"> Rock </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <img src="paper.png" width="40" alt="" />
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Paper</h3>
+            <p>
+              The intellect's secret weapon. It covers rock with cunning
+              strategy but is helplessly sliced by scissors. Remember, it's not
+              about the muscles; it's all about the mind.
+            </p>
+            <a class="btn btn-primary weapon-btn"> Paper </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <img src="scissors.png" width="40" alt="scissors" />
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Scissors</h3>
+            <p>
+              The game's slickest operator. They're sharp enough to snip through
+              paper but are crushed by the mighty rock. They might be small, but
+              they're not to be underestimated!Snip, snip, oops!
+            </p>
+            <a class="btn btn-primary weapon-btn"> Scissors </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
